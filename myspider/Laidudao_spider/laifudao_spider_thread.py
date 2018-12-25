@@ -64,4 +64,6 @@ class LaifudaoSpider:
 
 
 if __name__ == '__main__':
-    LaifudaoSpider(1, 30, 'E:\\LaifudaoSpider\\').start()
+    import utils
+    with utils.my_timeit():
+        LaifudaoSpider(1, 30, 'E:\\LaifudaoSpider\\').start()
